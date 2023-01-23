@@ -1,0 +1,56 @@
+.basketItem {
+  display: flex;
+  width: 270px;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 7px;
+  border-radius: 10px;
+  height: fit-content;
+  background: white;
+  transition: transform 200ms ease-in;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.basketItem:hover{
+  transform: scale(1.05);
+}
+.basketItem__imageContainer {
+  height: 120px;
+  padding: 7px;
+}
+.basketItem__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.basketItem__description {
+  padding:10px;
+}
+.basketItem__removeFromBasketBtn {
+  border: none;
+  cursor: pointer;
+  margin:7px 0;
+  padding: 15px 20px;
+  border-radius: 2px;
+  background-color: rgba(255, 166, 0, 0.873);
+  transition: transform 200ms ease-in;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.basketItem__removeFromBasketBtn:hover {
+  transform: scale(1.01);
+}
+.ratings {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 510px) {
+  .basketItem {
+    flex-direction: column;
+    align-items: center;
+  }
+  .basketItem__description {
+    padding: 0 10px;
+  }
+}

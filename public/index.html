@@ -2,29 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+ 
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Amazon</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

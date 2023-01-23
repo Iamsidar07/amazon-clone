@@ -1,0 +1,83 @@
+.payment{
+    background: white;
+    padding: 20px 10px;
+    height: fit-content;
+}
+.payment h1{
+    text-align: center;
+    font-weight: 600;
+}
+.payment__checkoutIcon h2{
+    text-align: center;
+    border-bottom: 1px solid rgba(240, 128, 128, 0.296);
+    padding: 20px;
+    font-weight: 500;
+}
+.payment__checkoutIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.payment__section{
+    display: flex;
+    padding: 10px;
+}
+.payment__title{
+    margin: 0 10px;
+    flex: 0.4;
+}
+.payment__locationIcon{
+    display: flex;
+    align-items: center;
+}
+.payment__address{
+    padding: 7px;
+    flex: 0.20;
+}
+.payment__itemSection{
+    flex-direction: column;
+    flex: 1;
+}
+.payment__deliveryTitle{
+    width: 100%;
+    margin: 10px;
+}
+.payment__items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.payment__method{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.payment__details{
+    background: rgba(128, 128, 128, 0.102);
+    width: 290px;
+    height: fit-content;
+    border-radius: 5px;
+    margin-top: 10px
+}
+
+.payment__price{
+    text-align: center;
+    margin-top: 25px;
+}
+.payNow__btn{
+    padding: 15px;
+    width: 100%;
+    margin-top: 15px;
+    border: none;
+    background: orange;
+    color: black;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.payNow__btn:hover{
+    background: skyblue;
+}

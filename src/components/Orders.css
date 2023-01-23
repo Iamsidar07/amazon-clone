@@ -1,0 +1,10 @@
+.orders{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    line-height: 1.5;
+    height: 90vh;
+    background-color: aliceblue;
+}
